@@ -27,6 +27,7 @@ class SQLRunner
     sql = File.open('lib/decoded_data.sql', 'w'){ |f| f.write (decoded_data) }
     sql = File.read('lib/decoded_data.sql')
     execute_sql(sql)
+
   end
 
   def execute_sql(sql)
